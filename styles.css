@@ -1,10 +1,17 @@
-body, html {
+/* Reset some basic elements for consistency */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body, html {
+    height: 100%;
     font-family: 'Arial', sans-serif;
     background: #f4f4f4;
 }
 
+/* Navigation bar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -33,17 +40,42 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Main content styles */
 main {
-    text-align: center;
     padding: 50px 20px;
 }
 
-h1 {
-    color: #000;
-    font-size: 2.5rem;
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 30px;
 }
 
+.text-content {
+    flex: 1;
+    padding-right: 20px; /* Adjust as needed */
+}
+
+.image-container {
+    flex: 2; /* Gives the image container twice as much space as the text container */
+}
+
+.code-screenshot {
+    width: 100%; /* Ensures the image is as wide as its container */
+    max-width: 100%; /* Limits the image to the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+/* Styles for H1 */
+h1 {
+    color: #000;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
 .download-button {
     background-color: #00a2ed;
     color: white;
@@ -55,6 +87,7 @@ h1 {
     text-transform: uppercase;
 }
 
+/* Footer styles */
 footer {
     background-color: #000;
     color: #fff;
@@ -65,37 +98,26 @@ footer {
     width: 100%;
 }
 
-.content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0;
-}
-
-.text-content {
-    flex-basis: 50%;
-    padding-right: 20px; /* Adjust the spacing between text and image */
-}
-
-.code-screenshot {
-    flex-basis: 50%;
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .content-container {
         flex-direction: column;
     }
 
     .text-content,
-    .code-screenshot {
-        flex-basis: auto;
+    .image-container {
+        flex: none;
     }
 
-    .text-content {
-        padding-right: 0;
+    .code-screenshot {
+        max-width: 90%; /* Adjust for mobile to have some margin */
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
     }
 }
-
