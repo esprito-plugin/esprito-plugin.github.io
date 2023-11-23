@@ -1,31 +1,39 @@
 body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: 'Arial', sans-serif;
     background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
-    max-width: 800px; /* Adjust as per your layout width */
-    margin: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
 header {
     background-color: #333;
-    color: white;
+    width: 100%;
     padding: 20px 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px; /* Adjust spacing between menu items */
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -35,30 +43,30 @@ nav ul li a {
 }
 
 main {
-    background: white;
-    margin-top: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow to match the design */
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content h1 {
     color: #333;
-    font-size: 1.5em; /* Adjust font-size to match design */
-    margin-bottom: 20px; /* Space between title and button */
+    font-size: 2em;
+    margin: 0.5em 0;
 }
 
 .download-button {
     background-color: #008cba;
     color: white;
     border: none;
-    padding: 10px 30px; /* Increase padding for a larger button */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    padding: 15px 25px;
     font-size: 1em;
-    margin: 4px 2px;
     cursor: pointer;
-    border-radius: 4px; /* optional: to add rounded corners to the button */
+    border-radius: 5px;
+    text-transform: uppercase; /* if you want to style the button text to be uppercase */
+    margin-bottom: 2em; /* Adds space between the button and the footer */
 }
 
 footer {
@@ -66,9 +74,19 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    width: 100%;
+}
+
+/* Additional styling for footer to ensure it sticks to the bottom */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    left: 0;
 }
 
 /* Add responsive breakpoints */
