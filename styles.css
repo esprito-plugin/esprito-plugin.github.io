@@ -53,7 +53,7 @@ main {
 }
 
 .text-content {
-    flex: 1;
+    flex: 2;
     padding-right: 20px; /* Adjust as needed */
 }
 
@@ -62,7 +62,7 @@ main {
 }
 
 .code-screenshot {
-    width: 75%; /* Ensures the image is as wide as its container */
+    width: 100%; /* Ensures the image is as wide as its container */
     max-width: 100%; /* Limits the image to the width of its container */
     height: auto; /* Maintain aspect ratio */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
