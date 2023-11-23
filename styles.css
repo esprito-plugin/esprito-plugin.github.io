@@ -62,7 +62,7 @@ main {
 }
 
 .code-screenshot {
-    width: 70%; /* Ensures the image is as wide as its container */
+    width: 75%; /* Ensures the image is as wide as its container */
     max-width: 100%; /* Limits the image to the width of its container */
     height: auto; /* Maintain aspect ratio */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
@@ -71,7 +71,7 @@ main {
 /* Styles for H1 */
 h1 {
     color: #000;
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-bottom: 20px;
 }
 
