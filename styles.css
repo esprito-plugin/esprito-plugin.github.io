@@ -1,57 +1,54 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: 'Arial', sans-serif;
     background: #f4f4f4;
-    display: flex;
-    flex-direction: column;
 }
 
-.container {
-    flex: 1;
+.navbar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 5%;
+    background-color: #000;
+    color: #fff;
 }
 
-header {
-    background-color: #333;
-    width: 100%;
-    padding: 10px 0;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 1em;
 }
 
 main {
     text-align: center;
-    width: 100%; /* Full width to center the content */
-    padding: 40px 0; /* More padding on top and bottom */
+    padding: 50px 20px;
 }
 
-.content h1 {
-    color: #333;
-    font-size: 2.5em; /* Larger font size for the title */
-    margin: 20px 0;
+h1 {
+    color: #000;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.code-screenshot {
+    max-width: 90%;
+    height: auto;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .download-button {
@@ -59,50 +56,37 @@ main {
     color: white;
     border: none;
     padding: 15px 30px;
-    font-size: 1em;
+    font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
     text-transform: uppercase;
-    margin-bottom: 40px; /* More space above the image */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Optional: Adds shadow to the button */
-}
-
-img {
-    max-width: 100%; /* Makes sure image is not bigger than its container */
-    height: auto; /* Keeps the image aspect ratio */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Optional: Adds shadow to the image */
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #000;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
     width: 100%;
 }
 
-/* Additional styling for footer to ensure it sticks to the bottom */
-footer {
-    position: relative; /* Change to relative for natural flow */
-    bottom: 0;
-    left: 0;
-}
-
-/* Add responsive breakpoints */
 @media (max-width: 768px) {
-    .container {
-        padding: 10px;
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        padding: 0;
     }
 
     nav ul li {
-        margin: 0 5px;
-    }
-
-    .download-button {
-        padding: 10px 20px;
-    }
-
-    .content h1 {
-        font-size: 1.5em; /* Smaller font size for smaller screens */
+        display: block;
+        margin: 5px 0;
     }
 }
