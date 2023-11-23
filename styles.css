@@ -120,3 +120,9 @@ footer {
         font-size: 0.9em;
     }
 }
+
+.download-button-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* The link will inherit the color from its parent element */
+    display: inline-block; /* Allows width and height on the link */
+}
