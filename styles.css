@@ -131,7 +131,6 @@ footer {
 .slide img {
   width: 100%; /* Ensures images are responsive and do not overflow */
   height: auto; /* Maintain aspect ratio */
-  max-height: 500px; /* Ensures that the image does not exceed a certain height */
 }
 
 /* Navigation dots container - center it at the bottom of the slider */
