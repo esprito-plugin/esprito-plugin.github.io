@@ -83,6 +83,7 @@ h1 {
     border-radius: 5px;
     font-size: 30px;
     cursor: pointer;
+    width: 100%;
 }
 
 /* Footer Styles */
