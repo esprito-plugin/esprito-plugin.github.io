@@ -23,7 +23,7 @@ main {
 
  /* Ensure your footer has some default height or content to show */
  footer {
-    background: #333; /* example background color for visibility */
+    background-color: #2B2B2B; /* example background color for visibility */
     color: white; /* example text color for visibility */
     text-align: center;
     padding: 10px 0; /* Adjust padding as needed */
@@ -35,7 +35,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background-color: #000;
+    background-color: #2B2B2B;
     color: #fff;
 }
 
@@ -86,9 +86,9 @@ h1 {
 
 /* Button Styles */
 .download-button {
-    padding-top: 5px;
+    padding-top: 10px;
     padding: 30px 30px;
-    background-color: #000;
+    background-color: #2B2B2B;
     color: #05D773;
     border: none;
     border-radius: 5px;
