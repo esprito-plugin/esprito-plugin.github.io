@@ -87,8 +87,8 @@ h1 {
 /* Button Styles */
 .download-button {
     padding: 30px 30px;
-    color: #fff;
-    background-color: #05D773;
+    background-color: #000;
+    color: #05D773;
     border: none;
     border-radius: 5px;
     font-size: 30px;
