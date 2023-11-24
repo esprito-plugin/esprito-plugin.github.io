@@ -118,8 +118,6 @@ footer {
     display: inline-block;
 }
 
-
-
 /* Slider container - make sure it has a relative positioning */
 .slider {
   position: relative;
@@ -139,7 +137,6 @@ footer {
 .slider-nav {
   bottom: 10px; /* Position from the bottom of the slider */
   left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Offset the element to the left by half its width */
   z-index: 100; /* Ensure the nav is above the slides */
 }
 
