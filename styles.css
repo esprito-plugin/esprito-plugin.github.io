@@ -5,23 +5,21 @@
     padding: 0;
 }
 
-html {
+/* Document Flow */
+html, body {
     height: 100%;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* vh is the viewport height */
-    margin: 0; /* Remove the default margin */
-  }
-  
-  main {
-    flex-grow: 1; /* This will allow the main content to expand */
-  }
-  
-  /* Ensure your footer has some default height or content to show */
-  footer {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main Content Styles */
+main {
+    padding: 50px 20px;
+}
+
+ /* Ensure your footer has some default height or content to show */
+ footer {
     background: #333; /* example background color for visibility */
     color: white; /* example text color for visibility */
     text-align: center;
@@ -127,4 +125,4 @@ h1 {
   width: 100%; /* Ensures images are responsive and do not overflow */
   height: auto; /* Maintain aspect ratio */
   max-height: 556px; /* Ensures that the image does not exceed a certain height */
-}  
+}
