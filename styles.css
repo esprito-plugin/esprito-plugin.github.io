@@ -76,14 +76,14 @@ h1 {
 
 /* Button Styles */
 .download-button {
-    padding: 60px 30px;
+    padding: 30px 30px;
     color: #fff;
     background-color: #00a2ed;
     border: none;
     border-radius: 5px;
     font-size: 30px;
     cursor: pointer;
-    width: 80%;
+    width: 85%;
 }
 
 /* Footer Styles */
