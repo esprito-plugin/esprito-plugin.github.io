@@ -127,56 +127,71 @@ footer {
     display: inline-block; /* Allows width and height on the link */
 }
 
+/* Slider container */
 .slider {
-  width: 100%;
+  max-width: 100%; /* Maximum width of the slider */
   position: relative;
+  margin: auto;
 }
 
+/* Slides */
 .slide {
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
+  display: none; /* Hide slides by default */
+  width: 100%; /* Slides need to be the same width as the slider container */
+  transition: opacity 0.6s; /* Smooth transition for fading slides */
 }
 
-/* :target pseudo-class styles the active slide */
-:target {
+/* Display the first slide by default */
+.slide:first-of-type {
   display: block;
 }
 
+/* Navigation dots container */
 .slider-nav {
-  text-align: center;
+  text-align: center; /* Center the dot navigation in the slider */
   position: absolute;
   bottom: 10px;
-  width: 100%;
+  left: 0;
+  right: 0;
 }
 
+/* Navigation dots */
 .dot {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #bbb;
-  margin: 0 5px;
   cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-/* :target pseudo-class styles the active dot */
-.dot:target,
-.slider-nav a[href]:target {
+/* The active dot */
+.dot.active, .dot:hover {
   background-color: #717171;
 }
 
-/* Fallback to show the first slide */
-#slide1:target ~ .slider-nav a[href="#slide1"],
-#slide2:target ~ .slider-nav a[href="#slide2"],
-.slider-nav a[href="#slide1"]:target {
-  background-color: #717171;
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-/* Default to show the first slide if none are targeted */
-.slider:target .slide:first-child,
-.slider .slide:first-child {
-  display: block;
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
+
+/* Responsive settings */
+@media only screen and (max-width: 768px) {
+  .slider {
+    width: 100%;
+  }
+  .slide img {
+    width: 100%;
+  }
+}
+
+/* Additional styles for buttons, transitions, etc., can be added below */
+
