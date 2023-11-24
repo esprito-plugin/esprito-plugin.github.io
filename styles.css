@@ -180,3 +180,55 @@ footer {
 .slider .slide:first-child {
   display: block;
 }
+
+
+
+/* Container holding the slider and the dots */
+.image-container {
+  position: relative;
+}
+
+/* Hides all slides by default */
+.slide {
+  display: none;
+}
+
+/* Display the slide that has the same ID as the current URL fragment */
+:target {
+  display: block;
+}
+
+/* Style for the slider navigation dots */
+.slider-nav {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+/* Change the background color of the dot to indicate the current slide */
+:target ~ .slider-nav a[href^="#slide"] {
+  background-color: #717171;
+}
+
+/* Fix the image source typo and align the first slide to display by default if no target is specified */
+#slide1,
+:target ~ .slider-nav a[href="#slide1"] {
+  display: block;
+}
+
+/* Ensure the first dot is highlighted when the page loads */
+.slider-nav a[href="#slide1"] {
+  background-color: #717171;
+}
