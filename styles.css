@@ -88,7 +88,7 @@ h1 {
 .download-button {
     padding: 30px 30px;
     color: #fff;
-    background-color: #00a2ed;
+    background-color: #05D773;
     border: none;
     border-radius: 5px;
     font-size: 30px;
@@ -118,7 +118,6 @@ h1 {
 .download-button-link {
     padding-top: 5px;
     text-decoration: none;
-    color: rgba(5, 215, 115, 1);
     display: inline-block;
     width: 100%;
 }
