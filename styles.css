@@ -123,6 +123,7 @@ footer {
 .slider {
   position: relative;
   width: 100%; /* Full width of the container */
+  max-height: 634px; /* Adjust the height as necessary */
   overflow: hidden; /* Ensures that oversized images do not break the layout */
 }
 
@@ -130,6 +131,7 @@ footer {
 .slide img {
   width: 100%; /* Ensures images are responsive and do not overflow */
   height: auto; /* Maintain aspect ratio */
+  max-height: 634px; /* Ensures that the image does not exceed a certain height */
 }
 
 /* Navigation dots container - center it at the bottom of the slider */
