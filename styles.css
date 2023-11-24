@@ -171,7 +171,6 @@ footer {
 /* Fallback to show the first slide */
 #slide1:target ~ .slider-nav a[href="#slide1"],
 #slide2:target ~ .slider-nav a[href="#slide2"],
-#slide3:target ~ .slider-nav a[href="#slide3"],
 .slider-nav a[href="#slide1"]:target {
   background-color: #717171;
 }
