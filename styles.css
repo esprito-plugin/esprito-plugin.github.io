@@ -126,3 +126,58 @@ footer {
     color: inherit; /* The link will inherit the color from its parent element */
     display: inline-block; /* Allows width and height on the link */
 }
+
+.slider {
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* :target pseudo-class styles the active slide */
+:target {
+  display: block;
+}
+
+.slider-nav {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* :target pseudo-class styles the active dot */
+.dot:target,
+.slider-nav a[href]:target {
+  background-color: #717171;
+}
+
+/* Fallback to show the first slide */
+#slide1:target ~ .slider-nav a[href="#slide1"],
+#slide2:target ~ .slider-nav a[href="#slide2"],
+#slide3:target ~ .slider-nav a[href="#slide3"],
+.slider-nav a[href="#slide1"]:target {
+  background-color: #717171;
+}
+
+/* Default to show the first slide if none are targeted */
+.slider:target .slide:first-child,
+.slider .slide:first-child {
+  display: block;
+}
