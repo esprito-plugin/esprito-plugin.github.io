@@ -8,10 +8,13 @@
 /* Document Flow */
 html, body {
     height: 100%;
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+  }
 
 /* Main Content Styles */
 main {
