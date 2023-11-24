@@ -116,6 +116,7 @@ footer {
     text-decoration: none;
     color: inherit;
     display: inline-block;
+    width: 100%;
 }
 
 /* Slider container - make sure it has a relative positioning */
