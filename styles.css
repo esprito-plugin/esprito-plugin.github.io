@@ -35,7 +35,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background-color: #2B2B2B;
+    background-color: #000;
     color: #fff;
 }
 
@@ -86,8 +86,7 @@ h1 {
 
 /* Button Styles */
 .download-button {
-    padding-top: 10px;
-    padding: 30px 30px;
+    padding: 40px 30px;
     background-color: #2B2B2B;
     color: #05D773;
     border: none;
