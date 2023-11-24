@@ -137,7 +137,6 @@ footer {
 
 /* Navigation dots container - center it at the bottom of the slider */
 .slider-nav {
-  position: absolute;
   bottom: 10px; /* Position from the bottom of the slider */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Offset the element to the left by half its width */
