@@ -81,7 +81,7 @@ h1 {
     background-color: #00a2ed;
     border: none;
     border-radius: 5px;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
 }
 
@@ -137,6 +137,7 @@ footer {
 .slider-nav {
   bottom: 10px; /* Position from the bottom of the slider */
   left: 50%; /* Center horizontally */
+  transform: translateX(50%);
   z-index: 100; /* Ensure the nav is above the slides */
 }
 
