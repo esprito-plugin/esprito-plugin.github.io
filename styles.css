@@ -117,6 +117,7 @@ h1 {
 }
 
 .download-button-link {
+    margin-top: 50px;
     text-decoration: none;
     color: inherit;
     display: inline-block;
