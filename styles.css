@@ -86,6 +86,7 @@ h1 {
 
 /* Button Styles */
 .download-button {
+    padding-top: 5px;
     padding: 30px 30px;
     background-color: #000;
     color: #05D773;
@@ -116,7 +117,6 @@ h1 {
 }
 
 .download-button-link {
-    padding-top: 5px;
     text-decoration: none;
     display: inline-block;
     width: 100%;
