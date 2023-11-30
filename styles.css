@@ -80,12 +80,12 @@ nav ul li a {
     flex: 1;
     max-width: 100%;
     overflow: hidden;
-    max-height: 557px; // height of left size content
+    max-height: 557px; /* height of left size content */
+    box-shadow: 2px 2px 14px 6px rgba(0, 0, 0, 0.2);
+    background-color: #2b2b2b;
 }
 
 .code-screenshot {
-    width: 100%;
-    height: auto;
 }
 
 /* H1 Styles */
@@ -140,7 +140,7 @@ h1 span {
 .code-screenshot {
     width: 100%; /* Ensures images are responsive and do not overflow */
     height: auto; /* Maintain aspect ratio */
-    max-height: 556px; /* Ensures that the image does not exceed a certain height */
+    max-height: 557px; /* Ensures that the image does not exceed a certain height */
 }
 
 .slider {
@@ -148,19 +148,27 @@ h1 span {
 }
 
 .slider-item {
+    padding: 0 60px;
     font-size: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
+    background-color: #2b2b2b;
+}
+
+.slider-item img {
+    object-fit: cover;
+    object-position: top;
 }
 
 .slider-description {
     min-height: 80px;
     display: block;
     background-color: #2b2b2b;
-    color: white;
+    color: #05D773;
     font-size: 13px;
-    padding: 4px 10px;
+    padding: 12px;
+    margin-left: -50px;
+    margin-right: -50px;
 }
 
 .controls {
@@ -187,7 +195,7 @@ h1 span {
 .controls .prev:hover:after,
 .controls .next:hover:before,
 .controls .next:hover:after {
-    background-color: #8a8a8a;
+    /*background-color: #8a8a8a;*/
 }
 
 
@@ -209,7 +217,7 @@ h1 span {
     display: block;
     width: 32px;
     height: 6px;
-    background-color: #606060;
+    background-color: #05D773;
     z-index: 10;
 }
 
@@ -241,7 +249,7 @@ h1 span {
 
     .slider-description {
         min-height: 40px;
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 
@@ -252,6 +260,7 @@ h1 span {
 
     .download-button {
         font-size: 2rem;
+        padding: 30px;
     }
 
     .content-container {
@@ -265,8 +274,8 @@ h1 span {
     }
 
     h1 {
-        font-size: 4rem;
-        line-height: 6rem;
+        font-size: 3rem;
+        line-height: 4.5rem;
     }
 
     nav ul li {
@@ -277,22 +286,42 @@ h1 span {
         font-size: 1.6rem;
     }
 
-    .content-container {
-        flex-direction: row;
-        gap: 40px;
-        max-width: 1880px;
-    }
-
-    .download-button {
-        padding: 40px 30px;
-        background-color: #2B2B2B;
-        width: 90%;
-        font-size: 40px;
-    }
-
     .page-body {
         display: flex;
         justify-content: center;
         align-items: flex-start;
+    }
+
+    .download-button {
+        max-width: 90%;
+    }
+
+    .content-container {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: stretch;
+    }
+
+    @media (min-width: 1660px) {
+        h1 {
+            font-size: 4rem;
+            line-height: 6rem;
+        }
+
+        .content-container {
+            max-width: 1880px;
+        }
+
+        .download-button {
+            padding: 40px;
+            font-size: 2.5rem;
+        }
+
     }
 }
