@@ -51,9 +51,8 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 5px;
+    margin: 0 5px 0 20px;
     display: inline;
-    margin-left: 20px;
 }
 
 nav ul li a {
@@ -69,6 +68,7 @@ nav ul li a {
     align-items: center;
     margin-bottom: 30px;
     gap: 40px;
+    max-width: 98vw;
 }
 
 .text-content {
