@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esprito Spring Tools Plugin</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 <body>
-    <header>
+<div class="wrapper">
+    <header class="page-header">
         <div class="navbar">
             <div>
                 <a href="https://esprito.com" class="download-button-link">
@@ -28,25 +30,51 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="page-body">
         <div class="content-container">
             <div class="text-content">
-                <h1>Esprito tools —</h1>
-                <h1>boost your Spring</h1>
-                <h1>coding with our</h1>
-                <h1>IntelliJ IDEA Plugin</h1>
+                <h1>
+                    <span>Esprito tools —</span>
+                    <span>boost your Spring</span>
+                    <span>coding with our</span>
+                    <span>IntelliJ IDEA Plugin</span>
+                </h1>
                 <a href="https://github.com/esprito-plugin/plugin" class="download-button-link">
                     <button class="download-button">Get free from github</button>
-                </a>            
+                </a>
             </div>
-            <div class="image-container">
-                <img src="/images/code-screenshot1.png" alt="Esprito IntelliJ IDEA Plugin Screenshot" class="code-screenshot"/>
+            <div class="slider-container">
+                <ul class="controls" id="controls" aria-label="Carousel Navigation" tabindex="0">
+                    <li class="prev" aria-controls="customize" tabindex="-1" data-controls="prev">
+                        prev
+                    </li>
+                    <li class="next" aria-controls="customize" tabindex="-1" data-controls="next">
+                        next
+                    </li>
+                </ul>
+                <div class="slider" id="slider">
+                    <div class="slider-item">
+                        <span class="slider-description">
+                            <b>Autocompletion:</b> Autocomplete bean names and navigate through annotations, linking to relevant classes and files
+                        </span>
+                        <img src="/images/screenshots/code-screenshot2.png" alt="Esprito IntelliJ IDEA Plugin Screenshot" class="code-screenshot"/>
+                    </div>
+                    <div class="slider-item">
+                        <span class="slider-description">
+                            <b>Simplified Configuration:</b> Make working with .properties and .yaml files more efficient through our advanced autocomplete and navigation features
+                        </span>
+                        <img src="/images/screenshots/code-screenshot1.png" alt="Esprito IntelliJ IDEA Plugin Screenshot" class="code-screenshot"/>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="page-footer">
         <p>© 2023 Esprito Tech</p>
         <p>All rights reserved.</p>
     </footer>
+</div>
 </body>
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="/main.js"></script>
