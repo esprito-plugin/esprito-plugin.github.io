@@ -18,7 +18,7 @@ html, body {
 
 /* Main Content Styles */
 main {
-    padding: 50px 20px;
+    padding: 34px 20px;
 }
 
 /* Ensure your footer has some default height or content to show */
@@ -246,12 +246,24 @@ h1 span {
 }
 
 @media (min-width: 960px) {
+    main {
+        padding: 40px 20px;
+    }
+
     .download-button {
         font-size: 2rem;
     }
+
+    .content-container {
+        gap: 100px;
+    }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
+    main {
+        padding: 50px 20px;
+    }
+
     h1 {
         font-size: 4rem;
         line-height: 6rem;
@@ -267,6 +279,7 @@ h1 span {
 
     .content-container {
         flex-direction: row;
+        gap: 40px;
     }
 
     .download-button {
