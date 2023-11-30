@@ -14,6 +14,11 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: 'JetBrains Mono', monospace;
+
+}
+
+button {
+    outline: none;
 }
 
 /* Main Content Styles */
@@ -65,7 +70,6 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 30px;
     gap: 40px;
     max-width: 98vw;
@@ -153,11 +157,13 @@ h1 span {
     display: flex;
     flex-direction: column;
     background-color: #2b2b2b;
+    overflow: hidden;
 }
 
 .slider-item img {
     object-fit: cover;
     object-position: top;
+    width: 200%;
 }
 
 .slider-description {
@@ -238,6 +244,12 @@ h1 span {
 }
 
 /* Responsive Design */
+@media (min-width: 420px) {
+    .slider-item img {
+        width: 150%;
+    }
+}
+
 @media (min-width: 768px) {
     .logo {
         height: 100px;
@@ -250,6 +262,10 @@ h1 span {
     .slider-description {
         min-height: 40px;
         font-size: 18px;
+    }
+
+    .text-content {
+        align-items: flex-start;
     }
 }
 
@@ -264,11 +280,40 @@ h1 span {
     }
 
     .content-container {
-        gap: 100px;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: stretch;
+    }
+}
+
+@media (min-width: 960px) and (orientation: landscape) {
+    main {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content-container {
+        flex-direction: column;
     }
 }
 
 @media (min-width: 1440px) {
+    .slider-item img {
+        width: auto;
+        max-width: 100%;
+    }
+
+    .content-container {
+        flex-direction: row;
+    }
+
     main {
         padding: 50px 20px;
     }
@@ -296,16 +341,8 @@ h1 span {
         max-width: 90%;
     }
 
-    .content-container {
-        flex-direction: row;
-        gap: 40px;
-    }
-
     .text-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-self: stretch;
+        align-items: flex-start;
     }
 
     @media (min-width: 1660px) {
@@ -322,6 +359,5 @@ h1 span {
             padding: 40px;
             font-size: 2.5rem;
         }
-
     }
 }
