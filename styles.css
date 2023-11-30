@@ -280,6 +280,7 @@ h1 span {
     .content-container {
         flex-direction: row;
         gap: 40px;
+        max-width: 1880px;
     }
 
     .download-button {
@@ -287,5 +288,11 @@ h1 span {
         background-color: #2B2B2B;
         width: 90%;
         font-size: 40px;
+    }
+
+    .page-body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 }
