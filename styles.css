@@ -176,7 +176,7 @@ h1 span {
 .controls .prev,
 .controls .next {
     position: absolute;
-    width: 40px;
+    width: 30px;
     height: 70px;
     z-index: 1;
     transform: translateY(-35px);
