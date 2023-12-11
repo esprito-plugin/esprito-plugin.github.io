@@ -1,7 +1,10 @@
 const slider = tns({
     container: '#slider',
     items: 1,
-    controlsContainer: '#controls',
     preventScrollOnTouch: 'auto',
-    nav: false
+    nav: true,
+    controls: false,
+    mouseDrag: true,
+    navPosition: 'bottom',
+    navContainer: '#nav-container'
 });
