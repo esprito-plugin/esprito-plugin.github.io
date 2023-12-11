@@ -134,7 +134,8 @@ nav a.active {
     width: var(--slider-img-width);
     height: var(--slider-img-height);
     position: absolute;
-    box-shadow: 0 0 600px -100px var(--green-light);
+    box-shadow: 0 25px 200px 40px #07d06630;
+    /*box-shadow: 0 0 600px -100px var(--green-light);*/
     z-index: 0;
 }
 
