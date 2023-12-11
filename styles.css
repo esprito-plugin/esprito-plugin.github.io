@@ -1,21 +1,21 @@
 :root {
-    --main-bg-color: linear-gradient(to bottom, #2B2B2B, #000000);
-    --main-color: #FFFFFF;
-    --secondary-color: #A7A7A7;
-    --main-font: 'JetBrains Mono', monospace;
+    --container-width: 1280px;
     --green-dark: #05D773;
     --green-light: #07D066;
-    --main-font-size: 16px;
-    --main-line-height: 24px;
-    --secondary-font: 'Inter', sans-serif;
     --h1-font-size: 50px;
     --h1-line-height: 65px;
+    --main-bg-color: linear-gradient(to bottom, #2B2B2B, #000000);
+    --main-color: #FFFFFF;
+    --main-font-size: 16px;
+    --main-font: 'JetBrains Mono', monospace;
+    --main-line-height: 24px;
+    --secondary-color: #A7A7A7;
+    --secondary-font: 'Inter', sans-serif;
     --slider-background: radial-gradient(50% 50% at 50% 50%, rgba(7, 208, 102, 0.45) 0%, rgba(7, 208, 102, 0) 100%);
     --slider-descr-height: 120px;
     --slider-img-height: 410px;
     --slider-img-width: 600px;
     --slider-nav-heigh: 44px;
-    --container-width: 1280px;
 }
 
 /* General Reset */
@@ -27,12 +27,12 @@
 
 /* Document Flow */
 html, body {
-    min-height: 100vh;
     background: var(--main-bg-color);
     color: var(--main-color);
     font-family: var(--main-font);
     font-size: var(--main-font-size);
     line-height: var(--main-line-height);
+    min-height: 100vh;
 }
 
 button {
@@ -43,8 +43,8 @@ button {
 h1 {
     font-family: var(--secondary-font);
     font-size: var(--h1-font-size);
-    line-height: var(--h1-line-height);
     font-weight: 700;
+    line-height: var(--h1-line-height);
 }
 
 h1 span {
@@ -59,23 +59,23 @@ main {
 }
 
 footer {
+    color: #6C6D71;
     font-size: 13px;
     line-height: 16px;
-    color: #6C6D71;
     padding: 30px 0;
 }
 
 /* Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
     height: 80px;
+    justify-content: space-between;
 }
 
 .navbar a {
-    display: flex;
     align-items: center;
+    display: flex;
 }
 
 .logo {
@@ -83,9 +83,9 @@ footer {
 }
 
 nav ul {
-    list-style-type: none;
     display: flex;
     gap: 60px;
+    list-style-type: none;
 }
 
 nav ul li {
@@ -104,19 +104,19 @@ nav a.active {
 
 /* content */
 .content-container {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 .text-content {
     align-items: flex-start;
+    align-self: stretch;
     display: flex;
     flex-basis: 400px;
     flex-direction: column;
-    justify-content: center;
-    align-self: stretch;
+    justify-content: flex-start;
 }
 
 /* slider */
@@ -130,33 +130,32 @@ nav a.active {
 }
 
 .slider-background {
-    top: 0;
-    width: var(--slider-img-width);
+    box-shadow: 0 25px 200px 40px #07d06630;
     height: var(--slider-img-height);
     position: absolute;
-    box-shadow: 0 25px 200px 40px #07d06630;
-    /*box-shadow: 0 0 600px -100px var(--green-light);*/
+    top: 0;
+    width: var(--slider-img-width);
     z-index: 0;
 }
 
 .slider-nav {
-    position: absolute;
+    align-items: center;
     bottom: var(--slider-descr-height);
-    left: 0;
-    width: var(--slider-img-width);
-    height: var(--slider-nav-heigh);
     display: flex;
     gap: 8px;
+    height: var(--slider-nav-heigh);
     justify-content: center;
-    align-items: center;
+    left: 0;
+    position: absolute;
+    width: var(--slider-img-width);
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
     background-color: rgba(217, 217, 217, .3);
+    border-radius: 50%;
     cursor: pointer;
+    height: 10px;
+    width: 10px;
 }
 
 .dot.tns-nav-active {
@@ -165,32 +164,32 @@ nav a.active {
 
 /* Button Styles */
 .download-button {
+    background-color: var(--green-light);
+    border-radius: 10px;
+    border: none;
+    color: var(--main-color);
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
     margin-top: 80px;
     padding: 16px 30px;
-    background-color: var(--green-light);
-    color: var(--main-color);
     width: 100%;
-    font-size: 24px;
-    line-height: 36px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    display: inline-block;
 }
 
 .wrapper {
     box-sizing: border-box;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
     margin: 0 auto;
-    width: var(--container-width);
     padding: 0 20px;
+    width: var(--container-width);
 }
 
 .page-header, .page-footer {
@@ -199,20 +198,20 @@ nav a.active {
 }
 
 .page-body {
-    flex-grow: 1;
-    margin-top: 120px;
-    display: flex;
-    justify-content: center;
     align-items: flex-start;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 120px;
 }
 
 
 /* Slide image styles - make sure they adapt to the container's size */
 .code-screenshot {
-    width: 100%; /* Ensures images are responsive and do not overflow */
     height: var(--slider-img-height); /* Ensures that the image does not exceed a certain height */
     object-fit: cover;
     object-position: top;
+    width: 100%; /* Ensures images are responsive and do not overflow */
 }
 
 .slider-item {
@@ -225,12 +224,13 @@ nav a.active {
 }
 
 .slider-description {
-    margin-top: var(--slider-nav-heigh);
-    height: var(--slider-descr-height);
     color: var(--secondary-color);
-    font-size: var(--main-font-size);
-    line-height: var(--main-line-height);
     display: block;
+    font-family: var(--secondary-font);
+    font-size: var(--main-font-size);
+    height: var(--slider-descr-height);
+    line-height: var(--main-line-height);
+    margin-top: var(--slider-nav-heigh);
 }
 
 .slider-description b {
@@ -282,8 +282,8 @@ nav a.active {
     }
 
     .code-screenshot {
-        width: 150%;
         object-position: left;
+        width: 150%;
     }
 
     nav ul {
@@ -291,8 +291,8 @@ nav a.active {
     }
 
     .navbar .logo {
-        width: 100px;
         margin-right: 20px;
+        width: 100px;
     }
 
     .container {
@@ -301,6 +301,11 @@ nav a.active {
 
     .text-content {
         align-items: center;
+        flex-basis: auto;
+    }
+
+    .text-content a {
+        width: 100%;
     }
 
     .page-body {
