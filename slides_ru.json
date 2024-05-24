@@ -1,7 +1,7 @@
 {
     "slides": [
         {
-            "title": "Autocompletion",
+            "title": "Автозаполнение",
             "description": "Автозаполнение имен компонентов и навигация по аннотациям, прямые ссылки на соответствующие классы и файлы.",
             "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
@@ -10,7 +10,7 @@
             }
         },
         {
-            "title": "Simplified work with configurations",
+            "title": "Упрощенная работа с конфигурациями",
             "description": "Оптимизируйте управление файлами .properties с помощью улчушенных функций автозаполнения и навигации.",
             "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
@@ -19,7 +19,7 @@
             }
         },
         {
-            "title": "And yaml files too",
+            "title": "А также с .yaml файлами",
             "description": "Улучшите редактирование .yaml с помощью продвинутого автозаполнения и более умной навигации.",
             "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
@@ -46,7 +46,7 @@
             }
         },
         {
-            "title": "Inspections",
+            "title": "Инспекция",
               "description": "Обнаруживайте и исправляйте ошибки с помощью 20 Spring проверок и умных исправлений.",
             "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
@@ -55,7 +55,7 @@
             }
         },
         {
-            "title": "Folding",
+            "title": "Свертывание кода",
             "description": "Улучшите фокус с помощью свертывания кода — держите контекст и значения свойств перед глазами.",
             "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
