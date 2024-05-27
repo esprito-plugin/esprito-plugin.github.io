@@ -1,27 +1,27 @@
 {
     "slides": [
         {
-            "title": "Автозаполнение",
-            "description": "Автозаполнение имен бинов и навигация по аннотациям, прямые ссылки на соответствующие классы и файлы.",
-            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
+            "title": "Autocompletion",
+            "description": "Autocomplete bean names and navigate annotations, linking directly to relevant classes and files.",
+            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
                 "img": "/images/screenshots/screenshot-beans.png",
                 "gif": ""
             }
         },
         {
-            "title": "Упрощенная работа с конфигурациями",
-            "description": "Оптимизируйте управление файлами .properties с помощью улучшенных функций автозаполнения и навигации.",
-            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
+            "title": "Simplified work with configurations",
+            "description": "Streamline .properties file management with our enhanced autocomplete and navigation features.",
+            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
                 "img": "/images/screenshots/screenshot-properties.png",
                 "gif": ""
             }
         },
         {
-            "title": "А также с файлами .yaml",
-            "description": "Улучшите редактирование .yaml с помощью продвинутого автозаполнения и более умной навигации.",
-            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
+            "title": "And yaml files too",
+            "description": "Improve .yaml editing with advanced autocomplete and smarter navigation.",
+            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
                 "img": "/images/screenshots/screenshot-yaml.png",
                 "gif": ""
@@ -29,8 +29,8 @@
         },
         {
             "title": "JPQL",
-            "description": "Прямая поддержка редактора JPQL — связывайте запросы с объектами для эффективной обработки данных.",
-            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
+            "description": "Direct JPQL editor support — link queries to entities for efficient data handling.",
+            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
                 "img": "/images/screenshots/screenshot-jpql.png",
                 "gif": ""
@@ -38,35 +38,35 @@
         },
         {
             "title": "Kotlin",
-            "description": "Полная поддержка Kotlin для бесшовной разработки на Spring.",
-            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
+            "description": "Full Kotlin support for a seamless Spring development experience.",
+            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
                 "img": "/images/screenshots/screenshot-kotlin.png",
                 "gif": ""
             }
         },
         {
-            "title": "Инспекции",
-            "description": "Обнаруживайте и исправляйте ошибки с помощью 20 проверок Spring и умных исправлений.",
-            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
+            "title": "Inspections",
+            "description": "Quickly spot & fix bugs with 20 Spring inspections and smart quick-fixes.",
+            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
                 "img": "/images/screenshots/screenshot-inspection1.png",
                 "gif": ""
             }
         },
         {
-            "title": "Свертывание кода",
-            "description": "Улучшите фокус с помощью свертывания кода — держите контекст и значения свойств перед глазами.",
-            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
+            "title": "Folding",
+            "description": "Enhance focus with code folding — maintain context and property values at a glance.",
+            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
                 "img": "/images/screenshots/screenshot-folding.png",
                 "gif": ""
             }
         },
         {
-            "title": "События Spring",
-            "description": "Перемещайтесь между издателями и слушателями событий Spring для четкого соединения рабочих процессов.",
-            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
+            "title": "Spring Event",
+            "description": "Navigate between Spring event publishers and listeners for clear workflow connections.",
+            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
             "slide": {
                 "img": "/images/screenshots/screenshot-events.png",
                 "gif": ""
