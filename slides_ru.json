@@ -2,8 +2,8 @@
     "slides": [
         {
             "title": "Автозаполнение",
-            "description": "Автозаполнение имен компонентов и навигация по аннотациям, прямые ссылки на соответствующие классы и файлы.",
-            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
+            "description": "Автозаполнение имен бинов и навигация по аннотациям, прямые ссылки на соответствующие классы и файлы.",
+            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
             "slide": {
                 "img": "/images/screenshots/screenshot-beans.png",
                 "gif": ""
@@ -11,17 +11,17 @@
         },
         {
             "title": "Упрощенная работа с конфигурациями",
-            "description": "Оптимизируйте управление файлами .properties с помощью улчушенных функций автозаполнения и навигации.",
-            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
+            "description": "Оптимизируйте управление файлами .properties с помощью улучшенных функций автозаполнения и навигации.",
+            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
             "slide": {
                 "img": "/images/screenshots/screenshot-properties.png",
                 "gif": ""
             }
         },
         {
-            "title": "А также с .yaml файлами",
+            "title": "А также с файлами .yaml",
             "description": "Улучшите редактирование .yaml с помощью продвинутого автозаполнения и более умной навигации.",
-            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
+            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
             "slide": {
                 "img": "/images/screenshots/screenshot-yaml.png",
                 "gif": ""
@@ -30,7 +30,7 @@
         {
             "title": "JPQL",
             "description": "Прямая поддержка редактора JPQL — связывайте запросы с объектами для эффективной обработки данных.",
-            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
+            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
             "slide": {
                 "img": "/images/screenshots/screenshot-jpql.png",
                 "gif": ""
@@ -39,16 +39,16 @@
         {
             "title": "Kotlin",
             "description": "Полная поддержка Kotlin для бесшовной разработки на Spring.",
-            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
+            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
             "slide": {
                 "img": "/images/screenshots/screenshot-kotlin.png",
                 "gif": ""
             }
         },
         {
-            "title": "Инспекция",
-              "description": "Обнаруживайте и исправляйте ошибки с помощью 20 Spring проверок и умных исправлений.",
-            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
+            "title": "Инспекции",
+            "description": "Обнаруживайте и исправляйте ошибки с помощью 20 проверок Spring и умных исправлений.",
+            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
             "slide": {
                 "img": "/images/screenshots/screenshot-inspection1.png",
                 "gif": ""
@@ -57,16 +57,16 @@
         {
             "title": "Свертывание кода",
             "description": "Улучшите фокус с помощью свертывания кода — держите контекст и значения свойств перед глазами.",
-            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
+            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
             "slide": {
                 "img": "/images/screenshots/screenshot-folding.png",
                 "gif": ""
             }
         },
         {
-            "title": "Spring Event",
-            "description": "Перемещайтесь между издателями Spring event publishers и listeners для четкого соединения рабочих процессов.",
-            "alt": "Esprito IntelliJ IDEA Plugin Screenshot",
+            "title": "События Spring",
+            "description": "Перемещайтесь между издателями и слушателями событий Spring для четкого соединения рабочих процессов.",
+            "alt": "Скриншот плагина Esprito для IntelliJ IDEA",
             "slide": {
                 "img": "/images/screenshots/screenshot-events.png",
                 "gif": ""
